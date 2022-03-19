@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+    
+  /* Css Varibles */
+  :root{
+    --navbar-height:59px;
+  }
+  
+  /* Navigation Bar */
+  #navbar{
+    display:flex;
+    align-items:center;
+    position: sticky;
+    top: 0px;
+  }
+  #navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3
+  }
+  /* Navigation Bar :logo and image */
+  #logo{
+  margin: 5px 10px;
+  }
+  #logo img{
+  height: 70px;
+  margin: 5px 20px;
+  }
+  
+  
+  /* Navigation Bar: List sytling */
+  #navbar ul{
+    font-family: 'Righteous', cursive;
+    display: flex;
+  }
+  #navbar ul li{
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 13px 0px 0px 70px
+  }
+  #navbar ul li a{
+   color: rgb(68, 33, 73);
+   display: block;
+   text-decoration: none;
+   padding: 5px 22px;
+   border-radius: 22px;
+  }
+  #navbar ul li a:hover{
+    color: rgb(51, 248, 255);
+    background-color: black;
+  }
+  #navbar h1{
+  color: rgb(90, 7, 107);
+  font-size: 28px;
+  }
+  
+/* landing page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(231, 243, 119, 0.5),rgba(69, 95, 241, 0.5)),url(../payment/food.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.content{
+    margin-top: 7%;
+    margin-left: 6%;
+    color: #fff;
+}
+.content h2{
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 600;
+    color: white;
+}
+.content p{
+    max-width: 500px;
+    line-height: 28px;
+    opacity: 0;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.slide-left{
+    animation-delay: 1s;
+}
+.links.slide-left{
+    animation-delay: 2s;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    }
